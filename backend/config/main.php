@@ -29,6 +29,18 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+
+        'urlManager' => [
+            'showScriptName' => true,
+            'enablePrettyUrl' => true,
+        ],
+        'authManager' => [   
+            'class' => 'yii\rbac\DbManager',    
+           
+        ],
+      
     ],
+
+
     'params' => $params,
 ];
